@@ -1,0 +1,3 @@
+Login to gmail account and type following url in the browser’s address bar
+https://www.google.com/settings/security/lesssecureapps 
+and Turn On Less secure apps

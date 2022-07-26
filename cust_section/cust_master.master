@@ -1,0 +1,41 @@
+﻿<%@ Master Language="VB" CodeFile="cust_master.master.vb" Inherits="cust_section_cust_master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+</head>
+<body style="background-image: url(../images/h12.jpg)">
+    <form id="form1" runat="server">
+        <div style="position:absolute;left:0px;top:0px;width:100%;height:120px;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <center>
+                <table>
+                    <tr>
+                        <td>
+                            <asp:Label ID="LblCustName" runat="server" Text="Welcome" Font-Names="Calibri" Font-Size="X-Large" ForeColor="#990033"></asp:Label></td>
+                    </tr>
+                </table>
+                </center>
+                
+                <table style="font-family:Calibri;font-size:18px;" cellspacing="0" cellpadding="10">
+                    <tr>                        
+                        <td>
+                            <asp:LinkButton ID="BtnSearchHerbs" runat="server" CausesValidation="False" ForeColor="White">Search Herbs</asp:LinkButton></td>
+                        <td>
+                            <asp:LinkButton ID="BtnMyOrders" runat="server" CausesValidation="False" ForeColor="White">My Orders</asp:LinkButton></td>
+                        <td>
+                            <asp:LinkButton ID="BtnComplaintFeedback" runat="server" CausesValidation="False" ForeColor="White">Complaints/Feedback</asp:LinkButton></td>
+                        <td>
+                            <asp:LinkButton ID="BtnLogout" runat="server" CausesValidation="False" ForeColor="White">Logout</asp:LinkButton></td>
+                    </tr>
+                </table>
+                <hr id="Hr1"  runat="server" style="width:100%;background-color:#0066CC"/>
+            </asp:ContentPlaceHolder>
+        </div>
+        <div style="position:absolute;left:0px;top:121px;width:100%;height:auto;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+            </div>
+    </form>
+</body>
+</html>
